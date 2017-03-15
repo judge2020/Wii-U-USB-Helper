@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\hunte\Documents\DECompiles\WiiU_USB_Helper.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADA81E17-5C8F-4861-8878-EBACAAACE3D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WiiU_USB_Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="SharpCompress">
+      <HintPath>lib\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Deployment" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WIIU_Downloader\Properties\Settings.cs" />
+    <Compile Include="WIIU_Downloader\Forms\WhatToAction.cs" />
+    <Compile Include="NusHelper\DataSize.cs" />
+    <Compile Include="NusHelper\TitleId.cs" />
+    <Compile Include="NusHelper\Platform.cs" />
+    <Compile Include="NusHelper\Server\KeyValidationResponse.cs" />
+    <Compile Include="NusHelper\Server\DbRow.cs" />
+    <Compile Include="Nus_Helper_Shared_Core\NusHelper\Saves\SaveDescription.cs" />
+    <Compile Include="A\cd1a6b8a2145a47d233d2d260c0456822.cs" />
+    <Compile Include="A\AssemblyInfoAttribute.cs" />
+    <Compile Include="A\c9d98206b36522903c9380884ee3ed7a2.cs" />
+    <Compile Include="A\cebcb894f95824d04686ff6457fffe6f6.cs" />
+    <Compile Include="A\ccf95a31a1e422894e14ee86b333c7a59.cs" />
+    <Compile Include="A\cdbb55c44507c06175fbfe26cfbaf24b7.cs" />
+    <Compile Include="A\c9ec21ca508b9d24510492d903b79d70c.cs" />
+    <Compile Include="A\cdd32ada064099893bcca8d7064e9eb28.cs" />
+    <Compile Include="A\c29e22175cc06867453fe39a41ed5a7cc.cs" />
+    <Compile Include="A\c6c48948a2ba87f2018a8803e9e4364dd.cs" />
+    <Compile Include="A\cb85779efa5f9c78fa841b92dceca9094.cs" />
+    <Compile Include="A\ccbda8e2370d034604647d744ba7d67ed.cs" />
+    <Compile Include="A\c833fbfa18d441f3acb05d803efdf1eb8.cs" />
+    <Compile Include="A\ca377ebace9a9e1ffac7b0c5a9158e838.cs" />
+    <Compile Include="A\cfcd12ee63ba7d661f4ab310574290bf9.cs" />
+    <Compile Include="A\c9654c418e330d33bb3f6a61645043740.cs" />
+    <Compile Include="A\cc0c47a7e733f93eb16513fe84807edf3.cs" />
+    <Compile Include="A\ca167c1c151adfd56785ba09bfd59360f.cs" />
+    <Compile Include="A\cce1cf1e0b6971ed6f7ef86a83b0959b6.cs" />
+    <Compile Include="A\cb48a6650cad6d81c80da89dfe58b703a.cs" />
+    <Compile Include="A\c641344460c4912d7feb758c824455611.cs" />
+    <Compile Include="A\caff792dac5a5e2f17b0e81e59bba386d.cs" />
+    <Compile Include="A\cba6aa8f767d2e8dfbca2d43d7148c173.cs" />
+    <Compile Include="A\ce64fe4baff0b285aaecd02e2cae2ea2c.cs" />
+    <Compile Include="A\cd89ebc14ea4d4a852b08341c6aa34e6e.cs" />
+    <Compile Include="A\c84e982887bf9da3143846a815f622ce3.cs" />
+    <Compile Include="A\c9b4e1fcff1aee20085c67df2c0a7bbbe.cs" />
+    <Compile Include="A\c6209113007a9ad14856270d1b7d6283f.cs" />
+    <Compile Include="A\c75deaf18e0ab7affef156d50093cdb0c.cs" />
+    <Compile Include="A\c0e1d4a6bce67cae7ae964c50154af167.cs" />
+    <Compile Include="A\c9f6f2530565bf2c7a05f7f7a30c4a19e.cs" />
+    <Compile Include="A\c7fc7a68576d08dd60f2d49fd91572072.cs" />
+    <Compile Include="A\ccc3f76fe54fd4491f91be05dee4ae471.cs" />
+    <Compile Include="A\cba9ccb5de5d13e1fc4eee7c9fc2e500f.cs" />
+    <Compile Include="A\c25ef6bb53bed613b759e041249d95973.cs" />
+    <Compile Include="A\c4966496e72141c4079228dd9259d5890.cs" />
+    <Compile Include="A\cf737d5fc357269cf79a2cfd9f8ae6a86.cs" />
+    <Compile Include="A\cc52536ea90ab73af54d1e8695431313d.cs" />
+    <Compile Include="A\cbdc154bee312f0a0e4f3f53feb957177.cs" />
+    <Compile Include="A\c79ad8cf5bf4b6688ca47c535279b41e3.cs" />
+    <Compile Include="A\c55dce5fb08412bc2bbcaa23f553e11ff.cs" />
+    <Compile Include="A\cee2d478c241f49568077f0b781df8ad5.cs" />
+    <Compile Include="A\cd4e9c2df21403937a5b01c35907172b8.cs" />
+    <Compile Include="A\c9f129ae39e326db65314987d7364277a.cs" />
+    <Compile Include="A\c991ef84e8004bad2a33b1d2a8a29ee4c.cs" />
+    <Compile Include="A\cf6e6a7764b0b53b187f050e35f6ca912.cs" />
+    <Compile Include="A\cfc23b4d5fc3d2e35bfc8c831516f74f0.cs" />
+    <Compile Include="A\ca9bdcc933fba327f28da88ba905bec9c.cs" />
+    <Compile Include="A\c91db8c022e2a7015af390f068a6acc82.cs" />
+    <Compile Include="A\c0fc4c884a489ab1cf5651c676981b88e.cs" />
+    <Compile Include="A\c416a1238acc81f778b3a91e68f62e6cc.cs" />
+    <Compile Include="A\ca7c0585e1ec86da306c70dd1c1b3fc2a.cs" />
+    <Compile Include="A\c68345c1d2a3907630d8bb2b7c43dfe8a.cs" />
+    <Compile Include="A\cd2bf7f1d85258eb2d5095641b833c3de.cs" />
+    <Compile Include="A\c3d2a32ac680c944edd20ad4c2623a1cd.cs" />
+    <Compile Include="A\cd56a691cf8fb7f569c385e2b4a9e52d7.cs" />
+    <Compile Include="A\cb520af621e92d2d0d069f641ebc2e5fe.cs" />
+    <Compile Include="A\cfaf4f412d216d73229b4c3e21bed1e85.cs" />
+    <Compile Include="A\c649fdcff08232d6e9696cb839e1b6022.cs" />
+    <Compile Include="A\cf6cba9f9f527031a89a0b45ed120554f.cs" />
+    <Compile Include="A\cf0f8bc05a1f6f6e102d281b24fe6c9da.cs" />
+    <Compile Include="A\c9156cbddd5e7ad30d02afcc5d90e556f.cs" />
+    <Compile Include="A\c5c01416ebf8abb000284fb663db097e9.cs" />
+    <Compile Include="A\c2a895ba50111b7745e9e91cf0599daad.cs" />
+    <Compile Include="A\c0c29f108584f137c614f55b15004c742.cs" />
+    <Compile Include="A\c94382f5eb163554a4b317b05f89fbc03.cs" />
+    <Compile Include="A\c22a300fb79007a52f6c5e1350c20f3fc.cs" />
+    <Compile Include="A\c9232640dab095d439cb8e76202d50d79.cs" />
+    <Compile Include="A\cce0509605dd49f167e15968bcebcf85e.cs" />
+    <Compile Include="A\c83a01df80bd5c7334c18c42a9e763f95.cs" />
+    <Compile Include="A\c1787c51468b07dafcfbe2abfbc5bb04b.cs" />
+    <Compile Include="A\cbd9d23875bab012857e040a881a1cf4c.cs" />
+    <Compile Include="A\c04094fd9c48096d147c0fc6cc8a97c26.cs" />
+    <Compile Include="A\cd2f044317b8351417a6ddcd59b1fb481.cs" />
+    <Compile Include="A\c7f5d91bc3961f40a7d6fb86e445fe3a4.cs" />
+    <Compile Include="A\c2e2f19e8cde9983e4129b4a047c9f5c6.cs" />
+    <Compile Include="A\cdf40c9764a014ff068a86edd8ace4556.cs" />
+    <Compile Include="A\cfdc97586078fe0abfe50aa3f3f0b6a00.cs" />
+    <Compile Include="A\c1287c46b305fa65517e5b77a5334b29e.cs" />
+    <Compile Include="A\c9d5fc374dcd742d4aee7811bbe7ee2e1.cs" />
+    <Compile Include="A\c6b6cd1274db5c3760ebd273284d15464.cs" />
+    <Compile Include="A\cb4f286a1ad27ee6e7492825e5ea00661.cs" />
+    <Compile Include="A\cb3ee0be46e53f0d59cf7ae8039f9406d.cs" />
+    <Compile Include="A\cf9652be11ede2a4c45b6e00796c8c7d3.cs" />
+    <Compile Include="A\c7a45ac90c7f59eb3c9c267df34f789f4.cs" />
+    <Compile Include="A\caaa166a921d0019973aa328703a03e82.cs" />
+    <Compile Include="A\c2588d86df683948e6abcda1b2a034974.cs" />
+    <Compile Include="A\c1d5d0d4f9464e1d296ba85cf189ecad6.cs" />
+    <Compile Include="A\cf32d3494232b898eac7b32bae42f9373.cs" />
+    <Compile Include="A\c7fcc581584086d18c24ec12ebfa8f37a.cs" />
+    <Compile Include="A\cff72ea250ac36ea03abde33ff61b7565.cs" />
+    <Compile Include="A\ccc0082396339666e15f34a6614404a47.cs" />
+    <Compile Include="A\c75f5de7b80fe7844b6d58b00022bcaf5.cs" />
+    <Compile Include="A\c2edf667a99180a98bbfd7e14f8ea1e18.cs" />
+    <Compile Include="A\cc6dede17deea63b67c3e0eb84bf12bb3.cs" />
+    <Compile Include="A\c2f239dc25375b30b02725c7f40300703.cs" />
+    <Compile Include="A\c856eddff8151961f06defe4c131ab65c.cs" />
+    <Compile Include="A\c5897cd50b058541621db862614b9c57c.cs" />
+    <Compile Include="A\c560dcb0fd8e4c36ddceec490ecc4c935.cs" />
+    <Compile Include="A\c6b77ba122628e02788f74fe0f89197d9.cs" />
+    <Compile Include="A\c29f686fe3fab48150f240b6f3fa06309.cs" />
+    <Compile Include="A\c08d29affad9d3e42fb3f986fdfc029ee.cs" />
+    <Compile Include="A\cee3593822ec8de8fac12bd472c140bd6.cs" />
+    <Compile Include="A\c17920230a4ceab76f3391befe7afb5be.cs" />
+    <Compile Include="A\c6a07387c2f827de6ca155929a5452624.cs" />
+    <Compile Include="A\c1b0822c22b951c8a567b56dd01e313bf.cs" />
+    <Compile Include="A\c9845e9fdb9bb1e03d7debbbd57953daa.cs" />
+    <Compile Include="A\ce5854f5adc29e0337aebfe99b1a5bca8.cs" />
+    <Compile Include="A\c4cd3182c1a92620e92b027ad11674ef9.cs" />
+    <Compile Include="A\c6129afa4402302c2a80ba8a6c17a4ec1.cs" />
+    <Compile Include="A\c645f779dde9c4e44fbb31d54b843aad5.cs" />
+    <Compile Include="A\c2d4baf2bd055f4368cf2297e4ff33900.cs" />
+    <Compile Include="A\c45079d4b21d1c7eab1527a05fb2c7e91.cs" />
+    <Compile Include="A\cd529c52ba6e98034731193f1e0be6af5.cs" />
+    <Compile Include="A\c480fcda80c1413c0c8bce00847120e11.cs" />
+    <Compile Include="A\c27603360ccc8374975348defb9eee9fc.cs" />
+    <Compile Include="A\cbb595cd1ce73bd1b906cfc6ca8385bb8.cs" />
+    <Compile Include="A\ced0676f39cd3a801adcb57c382323f74.cs" />
+    <Compile Include="A\c00d1c3fff546998b244f73cd80af6e96.cs" />
+    <Compile Include="A\c98e0d27acc5782eb4a0620faffca05d3.cs" />
+    <Compile Include="A\c7790279ae51d5c2ddf66e645bbeeef44.cs" />
+    <Compile Include="A\cdbc99a48928ffee3d676afdba59fd654.cs" />
+    <Compile Include="A\cc63ab87eedc7d55bfe2aeaa2107ae2fc.cs" />
+    <Compile Include="A\cd31cf38d8c521c96d342d3061f93a308.cs" />
+    <Compile Include="A\cfd95a277f4e8e0f3410cd92c0ae4f453.cs" />
+    <Compile Include="A\cd3565477443119402a66b39493a8ef3f.cs" />
+    <Compile Include="A\c40ece8fa5bfed221fc1f86983d53de2d.cs" />
+    <Compile Include="A\c2bb169b5d4236d69228785cc89207733.cs" />
+    <Compile Include="A\c48e04c70f4c03ebbc0b0b6c627d75758.cs" />
+    <Compile Include="A\c080cfc6ad1dbb46ae8cbd29bbf8919e2.cs" />
+    <Compile Include="A\ca8dab5d81ce3d2e8a9d2db0335274513.cs" />
+    <Compile Include="A\ce14b607699e6a65abad7d2ea38b8725a.cs" />
+    <Compile Include="A\c58509175cbe634f2808d2fefd16ab8d3.cs" />
+    <Compile Include="A\ca5f1a19f078eb23ced887c232d971b13.cs" />
+    <Compile Include="A\c5ac1c83c6771f1d2ec2730d47af7105b.cs" />
+    <Compile Include="A\c62da81ddb30b6dbfb000378010a467b6.cs" />
+    <Compile Include="A\c495b5dc2a5615c018cbf60b86f239eff.cs" />
+    <Compile Include="A\c1b7cf6218f1f498aba267c6450ec9233.cs" />
+    <Compile Include="A\cf9c4a065a8a6c1226fbf48aa58d35c4c.cs" />
+    <Compile Include="A\c88dfcbdfa12cefbcbf499f943fb3b8dd.cs" />
+    <Compile Include="A\c002d8baad38191162b8825efcd557406.cs" />
+    <Compile Include="A\c0097b67418072fc17ee5f6b628c5e30b.cs" />
+    <Compile Include="A\c00ca4200eb9a71ea3acea5565a8b3017.cs" />
+    <Compile Include="A\c02b2fecc9b0ef6addf52de0dd5ccd69c.cs" />
+    <Compile Include="A\c09607f0c10e6386fa08abe36570d5418.cs" />
+    <Compile Include="A\c0cf183ec36b835fa0e1414bdd4cd1822.cs" />
+    <Compile Include="A\c0e09ff753a299877908593d4ff3896d5.cs" />
+    <Compile Include="A\c0ed9f9150e9d273d02b22485fb2ac326.cs" />
+    <Compile Include="A\c1546ed34f657ad810d4d753d2f51c8f4.cs" />
+    <Compile Include="A\c179aeb93132d5f039d0cd3a1439d3823.cs" />
+    <Compile Include="A\c1967f7e2d2a97b97b6d65efb2b601f3e.cs" />
+    <Compile Include="A\c1a43086d62c5283435ed501dd585a1b1.cs" />
+    <Compile Include="A\c1b08adba6a0a61a0b8be9e8ac706cf34.cs" />
+    <Compile Include="A\c1bbcad09f7d3f69ee1d8850af68486c5.cs" />
+    <Compile Include="A\c1eb05145274034fc69a3292a824f7c0b.cs" />
+    <Compile Include="A\c21a387cec3f28994dc91df06b1496275.cs" />
+    <Compile Include="A\c2a0c2ae96e14c3951c8dd08f53fe4024.cs" />
+    <Compile Include="A\c2af734756c2d6bd28a48005deacf05b6.cs" />
+    <Compile Include="A\c2b595ab2309f3f58d01122973ca60e99.cs" />
+    <Compile Include="A\c2b6234da605e6ef3f8efa302cc198535.cs" />
+    <Compile Include="A\c2c70c34e9090df0cdefc483e35740e07.cs" />
+    <Compile Include="A\c32ac248027c9e8261b9ba45b4db5e7ed.cs" />
+    <Compile Include="A\c338061a69ddbf07990b7731aba45a615.cs" />
+    <Compile Include="A\c3396223b6b12dc01b64bb7afa266307e.cs" />
+    <Compile Include="A\c33c634c50cc6464a23a4f62c1101bd70.cs" />
+    <Compile Include="A\c35ebbdc0ef6c536668ed8f7ac5a9c99d.cs" />
+    <Compile Include="A\c376b56c026e38d1ad7d29034f2d920b8.cs" />
+    <Compile Include="A\c3978a42df3e901949e27aa5a5768ff04.cs" />
+    <Compile Include="A\c3b63cea46f59641a33e1a00816176f21.cs" />
+    <Compile Include="A\c408b30399180d31b1d06f7e411bbd348.cs" />
+    <Compile Include="A\c4a6a533bd83fb141986de6f6a05d666d.cs" />
+    <Compile Include="A\c4bc21fff1211818d530573d3a446c381.cs" />
+    <Compile Include="A\c4c354a5c29e03443b4bf3413b3b1255c.cs" />
+    <Compile Include="A\c50c5ab6d2aca52507a5f6d83f26a1a97.cs" />
+    <Compile Include="A\c54cc06f28a486fa672661b4612df355a.cs" />
+    <Compile Include="A\c5839b4118a820b542e621e778c78cc44.cs" />
+    <Compile Include="A\c583acc56d4ecb7856f6279a6185bfbd6.cs" />
+    <Compile Include="A\c5aecac2c863682cde0d9124db3d790db.cs" />
+    <Compile Include="A\c5e904606fd01cf624f051eb8df379e32.cs" />
+    <Compile Include="A\c64d2f00984a68ea18953f6e54e80e7bb.cs" />
+    <Compile Include="A\c659ef82821ce5a66b0710c2c722b7637.cs" />
+    <Compile Include="A\c66a1c83bdee03fa41a70c643b5176698.cs" />
+    <Compile Include="A\c67d9b6a5467c9d75d08709b59a091266.cs" />
+    <Compile Include="A\c684002ae514b990dbb262e614e17a28f.cs" />
+    <Compile Include="A\c6bf4460cf9059ccb034f7e25da0c9e5b.cs" />
+    <Compile Include="A\c6ed76dbd51df83645ab39eaa1eff2b91.cs" />
+    <Compile Include="A\c6ef0b4086a9ddbe24e2ddab8d4b99374.cs" />
+    <Compile Include="A\c703209e3fe1c856d59fc93b4c479b315.cs" />
+    <Compile Include="A\c715971c4c70e46ebcfcc7e99bf2f595c.cs" />
+    <Compile Include="A\c736644a47cdd7c5feff9eb2950d5aad4.cs" />
+    <Compile Include="A\c745d89fddb05a30e8ef1babd26557977.cs" />
+    <Compile Include="A\c74e4db5e3993d3704c71dcceb87429cb.cs" />
+    <Compile Include="A\c75c1f93673bbfb801467a150b6a0a9b7.cs" />
+    <Compile Include="A\c76e02490e53a6a5c9c5eb656b9ae843e.cs" />
+    <Compile Include="A\c7ac8dbf316e203189758d0e77f2a745d.cs" />
+    <Compile Include="A\c7c875b2f6d2a62be40cc160d349201b3.cs" />
+    <Compile Include="A\c7e7c7f5bf8574bd41bf2c8eec93ee3f2.cs" />
+    <Compile Include="A\c88268b74f5ce364f3970b8bd3f051a39.cs" />
+    <Compile Include="A\c8c77e074ebc8e73a5914b5a5d2cdaab5.cs" />
+    <Compile Include="A\c90f926c711eace1bc7dc6b5d504657f7.cs" />
+    <Compile Include="A\c913eb3dccbb6a5c1c3983fbc02a0ba42.cs" />
+    <Compile Include="A\c926afa9c5872b067bdbf2416102700e4.cs" />
+    <Compile Include="A\c94f5ec1863162ab34d60da6089b77f03.cs" />
+    <Compile Include="A\c98d626d5efc6f9d5a8c290a2b046fc50.cs" />
+    <Compile Include="A\c9b4090f9607a8252f041a249fe420068.cs" />
+    <Compile Include="A\c9d21716677494f54265a78ebb0c71eb9.cs" />
+    <Compile Include="A\ca408cbeba71e5c7363d19a2e923c7a15.cs" />
+    <Compile Include="A\ca7f59f7aa9ae1de5fae3e55a26e6045b.cs" />
+    <Compile Include="A\ca8a2f58d866cea146e6d61278e0aa5ff.cs" />
+    <Compile Include="A\ca8f39da86e7b333d7240f7f58b938e54.cs" />
+    <Compile Include="A\cad8c01cdf4965a5f4a2feed04bb30913.cs" />
+    <Compile Include="A\cb340211dab5e5cad862474535531b3fb.cs" />
+    <Compile Include="A\cb388f9b4f7541407d5276f457649446d.cs" />
+    <Compile Include="A\cb3b3c210b64dbf324f4709adbd2293b7.cs" />
+    <Compile Include="A\cbc37c11913f6155524e269a386b425d5.cs" />
+    <Compile Include="A\cc3c66262e74964bfd7eb3ee85bcaca64.cs" />
+    <Compile Include="A\cc6cbceca58ac4c7d5b081bb13e46a2b0.cs" />
+    <Compile Include="A\cc7421d8915e6aa8f9f0698b6a9c0bda2.cs" />
+    <Compile Include="A\cca6a2dc0744ec9ccbfcc5b97e4172f03.cs" />
+    <Compile Include="A\ccc7b045552fc87fbdab912aa66ab1ec9.cs" />
+    <Compile Include="A\ccc8319fb70be18e117edb5a68f6d77a8.cs" />
+    <Compile Include="A\ccc8f15722e4774192057c57cfb989ca5.cs" />
+    <Compile Include="A\ccd4a5e95b67661279323579b4aa1e4a0.cs" />
+    <Compile Include="A\ccec4ca58265155a131af0c4ef76e5c60.cs" />
+    <Compile Include="A\ccf2165d6690226a187de7b777ca5a724.cs" />
+    <Compile Include="A\ccf5318a380c513adbbab57743c46425c.cs" />
+    <Compile Include="A\ccfba36ada6e0fbc3be319dd8ce6669d8.cs" />
+    <Compile Include="A\cd0c16f0815ce104353e116af526c8edb.cs" />
+    <Compile Include="A\cd1319eedebbda8d27578756acdafa044.cs" />
+    <Compile Include="A\cd51fd1e6acc9fb6d0cf7503c15cb0a6f.cs" />
+    <Compile Include="A\cd6d6fd21de3556de428d6982329e94bd.cs" />
+    <Compile Include="A\cd7273e3ff82b27fb0fe5f0856f9e1874.cs" />
+    <Compile Include="A\cdaee2d37f7effe0581f827ac9195da99.cs" />
+    <Compile Include="A\cddb8ed830277950927807194493d8596.cs" />
+    <Compile Include="A\cdf0edc906c30d35f54fbfa71f6a32a71.cs" />
+    <Compile Include="A\cdf6c91719eae5a38c64a7fd64afdf5e1.cs" />
+    <Compile Include="A\ce02e38bcdaaa630ded0aa7945bfafc0f.cs" />
+    <Compile Include="A\ce43cb821ac290a500299c4cb4a0c3882.cs" />
+    <Compile Include="A\ce6f57d5474e6cfc49a8cf815a40f0eb6.cs" />
+    <Compile Include="A\ce736a80887e29adc3acc71bfb416f8b5.cs" />
+    <Compile Include="A\ce7d9fed342678496b021e8c63d0a2068.cs" />
+    <Compile Include="A\ce956a477987ef3580211c6863869551d.cs" />
+    <Compile Include="A\ceab80e890f43dc7a3ce92d7476fc58cb.cs" />
+    <Compile Include="A\cead0b4edd540ba7cac4363706aa68fb6.cs" />
+    <Compile Include="A\ceaf1b992c2813313944864deeda8dead.cs" />
+    <Compile Include="A\cf387d9495cc5b9941fba94edf097b32b.cs" />
+    <Compile Include="A\cf409401214588d27275613b23cb1ee0c.cs" />
+    <Compile Include="A\cf6c44ce1629f394b5ef11499eb386125.cs" />
+    <Compile Include="A\cf7b2699f772083447367b2772237767c.cs" />
+    <Compile Include="A\cfb3c6254fa85999608c2342171d3bfc3.cs" />
+    <Compile Include="A\cfc83a21d627a0c057ad642f88a7c9c2b.cs" />
+    <Compile Include="A\cfd932400aa2acc273e255df4b5e4a6af.cs" />
+    <Compile Include="A\cfe3e635f9e08b3ae3599c69d079b1799.cs" />
+    <Compile Include="A\cfe692819c6957a6eec4970c3560cea3d.cs" />
+    <Compile Include="A\cfe932de17c0b76a7d538ca2ed7c3f2c6.cs" />
+    <Compile Include="A\cfef913925dbcb138b6254aca5895c785.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="A\c00d1c3fff546998b244f73cd80af6e96.resx" />
+    <EmbeddedResource Include="A\c080cfc6ad1dbb46ae8cbd29bbf8919e2.resx" />
+    <EmbeddedResource Include="A\c1b7cf6218f1f498aba267c6450ec9233.resx" />
+    <EmbeddedResource Include="A\c27603360ccc8374975348defb9eee9fc.resx" />
+    <EmbeddedResource Include="A\c2bb169b5d4236d69228785cc89207733.resx" />
+    <EmbeddedResource Include="A\c40ece8fa5bfed221fc1f86983d53de2d.resx" />
+    <EmbeddedResource Include="A\c45079d4b21d1c7eab1527a05fb2c7e91.resx" />
+    <EmbeddedResource Include="A\c48e04c70f4c03ebbc0b0b6c627d75758.resx" />
+    <EmbeddedResource Include="A\c58509175cbe634f2808d2fefd16ab8d3.resx" />
+    <EmbeddedResource Include="A\c5ac1c83c6771f1d2ec2730d47af7105b.resx" />
+    <EmbeddedResource Include="A\c62da81ddb30b6dbfb000378010a467b6.resx" />
+    <EmbeddedResource Include="A\c7790279ae51d5c2ddf66e645bbeeef44.resx" />
+    <EmbeddedResource Include="A\c98e0d27acc5782eb4a0620faffca05d3.resx" />
+    <EmbeddedResource Include="A\ca5f1a19f078eb23ced887c232d971b13.resx" />
+    <EmbeddedResource Include="A\ca8dab5d81ce3d2e8a9d2db0335274513.resx" />
+    <EmbeddedResource Include="A\cbb595cd1ce73bd1b906cfc6ca8385bb8.resx" />
+    <EmbeddedResource Include="A\cc63ab87eedc7d55bfe2aeaa2107ae2fc.resx" />
+    <EmbeddedResource Include="A\cd31cf38d8c521c96d342d3061f93a308.resx" />
+    <EmbeddedResource Include="A\cd529c52ba6e98034731193f1e0be6af5.resx" />
+    <EmbeddedResource Include="A\cdbc99a48928ffee3d676afdba59fd654.resx" />
+    <EmbeddedResource Include="A\ce14b607699e6a65abad7d2ea38b8725a.resx" />
+    <EmbeddedResource Include="A\ced0676f39cd3a801adcb57c382323f74.resx" />
+    <EmbeddedResource Include="A\cf9c4a065a8a6c1226fbf48aa58d35c4c.resx" />
+    <EmbeddedResource Include="A\cfd95a277f4e8e0f3410cd92c0ae4f453.resx" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\!DarkGreen.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\!DarkRed.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\!Desert.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\!LightGrey.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\!Silver.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\DarkBlue.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Themes\Light.tssp" />
+    <EmbeddedResource Include="WiiU_USB_Helper$" />
+    <EmbeddedResource Include="WiiU_USB_Helper%%" />
+    <EmbeddedResource Include="WiiU_USB_Helper\exe.licenses" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
