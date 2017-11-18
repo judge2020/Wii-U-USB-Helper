@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5E129C3-3180-4985-9770-1DD7922B8FC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WiiU_USB_Helper</RootNamespace>
+    <AssemblyName>WiiU_USB_Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationIcon>WiiU_USB_Helper.ico</ApplicationIcon>
+    <StartupObject>A.c4a33c9ca97b5b0cfc40918375bc969d1</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Telerik.WinControls" />
+    <Reference Include="System" />
+    <Reference Include="AlphaFS" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Core" />
+    <Reference Include="Telerik.WinControls.UI" />
+    <Reference Include="SharpCompress" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="MonoGame.Framework" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell" />
+    <Reference Include="Be.Windows.Forms.HexBox" />
+    <Reference Include="HtmlAgilityPack" />
+    <Reference Include="Telerik.WinControls.RadDock" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="TargaImage" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="CommonCompressors" />
+    <Reference Include="LibEveryFileExplorer" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A\AssemblyInfoAttribute.cs" />
+    <Compile Include="A\c009279a45243b14127222aa793e3eb2e.cs" />
+    <Compile Include="A\c010f4bbb702bfc027c5ced536fe0e55d.cs" />
+    <Compile Include="A\c013886b13d99483894abe3dfb626c4db.cs" />
+    <Compile Include="A\c017566fd8fc3339eccefb42cd6629468.cs" />
+    <Compile Include="A\c0205eb4c3263b432cea09f9440ee3304.cs" />
+    <Compile Include="A\c023ef59998c1544cc2d1887c8e5ee879.cs" />
+    <Compile Include="A\c0338496e46eba07aec2116e8dc975b75.cs" />
+    <Compile Include="A\c03afd7759879ce2659a1d311b66f5509.cs" />
+    <Compile Include="A\c048e26d187cafd51fa9f2a3e3b31e673.cs" />
+    <Compile Include="A\c049d2fd5839d8f87efe26223b47d7e92.cs" />
+    <Compile Include="A\c0590f2b23bf77439d39f690adef5640a.cs" />
+    <Compile Include="A\c059558d2e53120bf2323dbfa6c2de7fd.cs" />
+    <Compile Include="A\c05ab40d4ac18a8667079203b1fd0edd0.cs" />
+    <Compile Include="A\c078ad73b059127d18da3574cc8cee77b.cs" />
+    <Compile Include="A\c08ae7287a6b4840c7ea72b303075d019.cs" />
+    <Compile Include="A\c096a487211ae5dc73592d0288ca2af72.cs" />
+    <Compile Include="A\c0d1def7fcb7a069d15883d88520df0c4.cs" />
+    <Compile Include="A\c0d90fcf706c7ee22fef7d88368977990.cs" />
+    <Compile Include="A\c0e041e021e04e712883cd11308c15013.cs" />
+    <Compile Include="A\c0e4fbbd9d84d9421a3acc98e626b3813.cs" />
+    <Compile Include="A\c0f2935fe414da8de28aae3858c34bcba.cs" />
+    <Compile Include="A\c0fe6f263da4583e63f7479127ad6a659.cs" />
+    <Compile Include="A\c105c88e162b3faac8e1371ca90f921c5.cs" />
+    <Compile Include="A\c106502e6ccd440ff8b0d7b5b50a2000f.cs" />
+    <Compile Include="A\c106808650cf9911d68d5de64e38e4d37.cs" />
+    <Compile Include="A\c112201421a408a8f2963cee12a5d2e69.cs" />
+    <Compile Include="A\c12be2b379e018745fe23117f8192d897.cs" />
+    <Compile Include="A\c139e8805fb7e52dce55ad4a973cb8d3f.cs" />
+    <Compile Include="A\c14cf1f200b737cded2756d6ab302a149.cs" />
+    <Compile Include="A\c14d40c2b2a764567b6cd18c56bb984f4.cs" />
+    <Compile Include="A\c1817dab2589007af706233cf4bfd3e6e.cs" />
+    <Compile Include="A\c1839979d60cc898291d1e0394101d91f.cs" />
+    <Compile Include="A\c18bd75190a2fc901d12b96d4b630e464.cs" />
+    <Compile Include="A\c19228ab060746b3868ef052f7a8e84a7.cs" />
+    <Compile Include="A\c19240ce50a3f99cf68eac460a5f219eb.cs" />
+    <Compile Include="A\c1988464babaf8772429b21b1be6aead2.cs" />
+    <Compile Include="A\c1a0e05096a9007e4437df07306380634.cs" />
+    <Compile Include="A\c1a1811b5277beeecebd485f6e385c20e.cs" />
+    <Compile Include="A\c1a3febb773c11d6b676cea49c7ee4eb0.cs" />
+    <Compile Include="A\c1bb66ba0941923c66aa96bbf66e7ba95.cs" />
+    <Compile Include="A\c1cc547a61522fa932c5dfb9e3eae719c.cs" />
+    <Compile Include="A\c1d7da5fb47c4831665780b1b86ae5a04.Designer.cs">
+      <DependentUpon>c1d7da5fb47c4831665780b1b86ae5a04.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c1f6179bdc03861e26477b7826da4fb8c.Designer.cs">
+      <DependentUpon>c1f6179bdc03861e26477b7826da4fb8c.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c20151a9ea28db235d9fe62d9cb2b3a39.cs" />
+    <Compile Include="A\c2199d5fdc7f6da5197806cf1358f4194.cs" />
+    <Compile Include="A\c23355a94bfad5e025bd92d5dd735da36.cs" />
+    <Compile Include="A\c239eab1759e44d632998f1b99bf45a71.cs" />
+    <Compile Include="A\c2555811fe1bbe3f7c849a1a259769b09.cs" />
+    <Compile Include="A\c2582c4b138328468a34a28a74fc5bc5f.cs" />
+    <Compile Include="A\c2616c42177f749f99e07d405c040207f.cs" />
+    <Compile Include="A\c26170878cf8ba946eba17983d6f2cf41.cs" />
+    <Compile Include="A\c264a2ea08d3ec2547037749b11bf2d0a.cs" />
+    <Compile Include="A\c27149d2c37c4a21b17fc94e970c55ec7.cs" />
+    <Compile Include="A\c297b6130075fc34fa606ad0c12ed51a8.cs" />
+    <Compile Include="A\c29fbdc123047b0296e5cc333563f7fe5.cs" />
+    <Compile Include="A\c2a38c4e9fc4f2f8e755c11e19049af52.cs" />
+    <Compile Include="A\c2b143215f0b748bfd5403c104882d48e.cs" />
+    <Compile Include="A\c2b8ef1783ae572d19956814809070e24.cs" />
+    <Compile Include="A\c2c27adf1a236ae5f3d15182fc9fcab67.cs" />
+    <Compile Include="A\c2c4b14fe5e90291f1e89570e7696c8a0.Designer.cs">
+      <DependentUpon>c2c4b14fe5e90291f1e89570e7696c8a0.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c2c904c1536a2398bcb1d4f0ecd432877.cs" />
+    <Compile Include="A\c2cb312b61c66d8b4798a228d0bbd995f.cs" />
+    <Compile Include="A\c2cc66aa233e9a8e3a345bb26df4263e1.Designer.cs">
+      <DependentUpon>c2cc66aa233e9a8e3a345bb26df4263e1.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c2db560c30ba5b8be65c4f33abfcc27de.cs" />
+    <Compile Include="A\c2dcabb874d69fc0fa9d819b6f090913a.Designer.cs">
+      <DependentUpon>c2dcabb874d69fc0fa9d819b6f090913a.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c2e667106d0f39ec3582adab5d57941a8.cs" />
+    <Compile Include="A\c2f00bfe25139e82d533630d75e9d4ec1.cs" />
+    <Compile Include="A\c2f33e217ef363f33c50a85e733ee1300.cs" />
+    <Compile Include="A\c2f4016fa04d8c2b2a9dba60e295715d5.cs" />
+    <Compile Include="A\c306d0f4edb8d9dba0e2099a0ed0662c3.cs" />
+    <Compile Include="A\c31aa9226ef7f3a555c5e2de139fd03ac.cs" />
+    <Compile Include="A\c31beb92a20cb9f47360118ffb6eb9f44.cs" />
+    <Compile Include="A\c32037f571be75ec9395b718eab8129e7.cs" />
+    <Compile Include="A\c32a8c9de32ca70b3066345f5a3256be2.cs" />
+    <Compile Include="A\c330c9d7d3b3430f9e77f4c768d333599.cs" />
+    <Compile Include="A\c330f628d27d60bbf064abb77485e9bc3.cs" />
+    <Compile Include="A\c33361560e36542013412a391a48b0f99.cs" />
+    <Compile Include="A\c335974ac49c4dace165f55e8c9d94b68.cs" />
+    <Compile Include="A\c335c9afc89f8b38416ea326e29397e4f.cs" />
+    <Compile Include="A\c3375176f6980eb42ea93846e5b197ade.cs" />
+    <Compile Include="A\c3391b519887d487f90639994067a0eca.cs" />
+    <Compile Include="A\c33acffe17435c5210fc162df5722ec42.cs" />
+    <Compile Include="A\c33b9cfba40fb236bddfe6249d60760cf.cs" />
+    <Compile Include="A\c34a3d9f5ce2884877848eea58fbbe484.cs" />
+    <Compile Include="A\c34c17ec7c784e9671db86a9e85398661.cs" />
+    <Compile Include="A\c34ce0b034187983362ba58cc8c72233a.cs" />
+    <Compile Include="A\c34f8cb9d1011c541152eb13b528c52c0.cs" />
+    <Compile Include="A\c35e85ecdf822c0628c4ba6d3d6570767.cs" />
+    <Compile Include="A\c35f868ba35d5c51ce5a72f140870f944.cs" />
+    <Compile Include="A\c36027b6f11f325bce777cd631b4b9a1c.cs" />
+    <Compile Include="A\c362f27bc84ea5b6692418fbdaf79e992.cs" />
+    <Compile Include="A\c36ae571439d6691c1084666cd8f1610a.cs" />
+    <Compile Include="A\c36b9340677bb6c50a561f64be5925efa.cs" />
+    <Compile Include="A\c3722f2ce35676c2ce539bc2eb02390db.cs" />
+    <Compile Include="A\c37b2bca41403d2a6ec54c69d55e5f9fe.cs" />
+    <Compile Include="A\c38174b97ad843d8e09893661e5d680b2.cs" />
+    <Compile Include="A\c39b800e9e165a3cdc1c56c51ebe12109.Designer.cs">
+      <DependentUpon>c39b800e9e165a3cdc1c56c51ebe12109.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c3a8284beade9d83b57fa5dda3b4c8767.cs" />
+    <Compile Include="A\c3cbdbf74d098acf07e3824418be5791c.cs" />
+    <Compile Include="A\c3dabc61d794f91548c16dc424947af9e.cs" />
+    <Compile Include="A\c3dc6b208b04533a4c84b7a3aea9612f3.Designer.cs">
+      <DependentUpon>c3dc6b208b04533a4c84b7a3aea9612f3.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c3e89d2b199cb88db040c1d3093faf8e0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\c3e89d2b199cb88db040c1d3093faf8e0.Designer.cs">
+      <DependentUpon>c3e89d2b199cb88db040c1d3093faf8e0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\c40ad917810501e1b7f5c1d6caa3f80c4.cs" />
+    <Compile Include="A\c419dc61cfddbfdb19a3efe049339425e.cs" />
+    <Compile Include="A\c425bd02e62fe6f0f6895b17f61cfe0f0.cs" />
+    <Compile Include="A\c43fd6e7f5e2958791aec6138672a52a4.cs" />
+    <Compile Include="A\c4422d25e7997ab98f050776daca5ac6c.cs" />
+    <Compile Include="A\c447fbff09b7108548bc76b10aedbae61.cs" />
+    <Compile Include="A\c4493e89f07af29c0ae1a8002cf7b7233.cs" />
+    <Compile Include="A\c45ab3113ea09209e9f00b6f5f2beea47.cs" />
+    <Compile Include="A\c4646e2a6e2ad7e5620e9ecf229259217.cs" />
+    <Compile Include="A\c4661923ed4f88392e3827d508c62c12a.Designer.cs">
+      <DependentUpon>c4661923ed4f88392e3827d508c62c12a.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c4752e9f82839b466091b53b1b27929cc.cs" />
+    <Compile Include="A\c479e8db4c3904e6e9ba81ae22ea4843e.cs" />
+    <Compile Include="A\c480a47b700b08811151497a080069323.cs" />
+    <Compile Include="A\c481c252751fe8828b5c9a5ad622f488f.cs" />
+    <Compile Include="A\c4a0c1729f34b9cf7da2405086f4c0853.cs" />
+    <Compile Include="A\c4a1aacd249a6434edeb4d7ec318dadc3.cs" />
+    <Compile Include="A\c4a33c9ca97b5b0cfc40918375bc969d1.cs" />
+    <Compile Include="A\c4ac7b1ff726812ebb6cc8b1485582880.cs" />
+    <Compile Include="A\c4b906a77eb43d4e563dda0eefd63f53e.cs" />
+    <Compile Include="A\c4be875c999e24029765c8ed7fc59e17c.Designer.cs">
+      <DependentUpon>c4be875c999e24029765c8ed7fc59e17c.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c4c1cf20119750bfee2a0bb499f990883.cs" />
+    <Compile Include="A\c4cbbd90ed4559089f2970be8fc52599d.cs" />
+    <Compile Include="A\c4cd44b7f0ea7b2eedfa2e91d4fd51a09.cs" />
+    <Compile Include="A\c4d503bfbab7b9916696c53e4b18ca75e.cs" />
+    <Compile Include="A\c4eb1eb565905d4b9f4740feff8e08e09.cs" />
+    <Compile Include="A\c4f91ec7ebe53f25040a850a9a67b22b7.cs" />
+    <Compile Include="A\c4fef8a4a120bcd2c5fad693f18270fad.cs" />
+    <Compile Include="A\c51fed6788035d97ec4961514c1d89a4e.cs" />
+    <Compile Include="A\c52d2cf936fd58d78ae1596b1e72b89f9.cs" />
+    <Compile Include="A\c53b58dec2861b92890ecfc33be7c9308.cs" />
+    <Compile Include="A\c5409344e1c2b74fa8c9a4d620ccb8d48.cs" />
+    <Compile Include="A\c54de386538266832a225034a9373a064.cs" />
+    <Compile Include="A\c558b1384e26aa4f6a6f45fe8364fe1a2.cs" />
+    <Compile Include="A\c57022ba9c2a08b010c87dd03dad49fd5.cs" />
+    <Compile Include="A\c5722de6752cb94166a4c3e58241e2212.cs" />
+    <Compile Include="A\c579af5100c3e117f64e502931598c510.cs" />
+    <Compile Include="A\c58b5beca5c1ecb9bea001c3625c4c2bd.cs" />
+    <Compile Include="A\c59ea372352f196d964b1974937367d9a.cs" />
+    <Compile Include="A\c59ff87f6bdc69ff3440c18f170633236.cs" />
+    <Compile Include="A\c5c8eb2cc6d316755e45318c67fbb80cd.cs" />
+    <Compile Include="A\c5cf3fae90091e0f5e28cca321dff64da.cs" />
+    <Compile Include="A\c5d31c847fff4f30d5a5277532b34f66e.cs" />
+    <Compile Include="A\c5db4cd6c2448810607b45eaf35a53573.cs" />
+    <Compile Include="A\c5de277a38cb35e93f8cd11509bc8b8ae.cs" />
+    <Compile Include="A\c5de679d1063c860586cedeea0687914f.cs" />
+    <Compile Include="A\c5f3d12f695a088a2f1920484129a8cc9.cs" />
+    <Compile Include="A\c5f62eb0f1d1c3ecb64334326833347f1.cs" />
+    <Compile Include="A\c5fed986b8e824b23e15a0cc51d8fcff1.cs" />
+    <Compile Include="A\c6039f0790413b5e04707059b16777215.cs" />
+    <Compile Include="A\c60797b4f8bfa489df1954dcdc88ad77d.Designer.cs">
+      <DependentUpon>c60797b4f8bfa489df1954dcdc88ad77d.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c6114b34ba4893a53ebb4b599e0e2e3fc.cs" />
+    <Compile Include="A\c6188cbae417ac84374cf19bfcad5d59b.cs" />
+    <Compile Include="A\c61d5906762ac8646d2a0a4321a7330ef.cs" />
+    <Compile Include="A\c61e2736b998bdf598f9e1f9d90eb5547.cs" />
+    <Compile Include="A\c6426b5527f7b8ff53998d27f92a31eb8.cs" />
+    <Compile Include="A\c64ce647c8ab1838f855eb5fdeea4d7ae.cs" />
+    <Compile Include="A\c6527c2bfb4fd3c4ba37fb81728484d72.cs" />
+    <Compile Include="A\c65539cb02603ee12172f85390ce6ac76.cs" />
+    <Compile Include="A\c65bd087778fe433bb71e2f8427aab961.cs" />
+    <Compile Include="A\c65c252d08c00d64b46298b4434860139.cs" />
+    <Compile Include="A\c67726bc94fb4dd43c5c00e863a4fed19.cs" />
+    <Compile Include="A\c6796fc6346bbdc3177a3b8efa277eed9.cs" />
+    <Compile Include="A\c68525722ec1c851086937cebaadd5aba.Designer.cs">
+      <DependentUpon>c68525722ec1c851086937cebaadd5aba.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c68c284a345f33fa48d3141efb40fabfa.cs" />
+    <Compile Include="A\c690dd8ca8a3ca5d55c4b9e5f8db74b48.Designer.cs">
+      <DependentUpon>c690dd8ca8a3ca5d55c4b9e5f8db74b48.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c6a2f8acae5ff1a8a909193a5c5de6687.cs" />
+    <Compile Include="A\c6a3c5358df047f49ab73958b4e189649.cs" />
+    <Compile Include="A\c6a5e9b85d86b4e098a511017a1073d71.cs" />
+    <Compile Include="A\c6bfe236c0809f12bf71cf01d39a9da3f.cs" />
+    <Compile Include="A\c6c7c37726cf7f55e7d11926fe4ec5ed9.cs" />
+    <Compile Include="A\c6cc3d7ece0e79d9b6960543a99bba606.cs" />
+    <Compile Include="A\c6cdbbd84d97cd0558823eadcae9794fd.cs" />
+    <Compile Include="A\c6d6eb87f66d6342bebd0fd4f00e328cb.cs" />
+    <Compile Include="A\c6dd63f3e15123e78bd36c1bc844abdac.cs" />
+    <Compile Include="A\c6df9e4664446f1950cecece76ca7e2b6.cs" />
+    <Compile Include="A\c6e4901274630d05cbbf6924f95d2edfb.cs" />
+    <Compile Include="A\c6eb084e1f00e617923ac0f2eb5316921.Designer.cs">
+      <DependentUpon>c6eb084e1f00e617923ac0f2eb5316921.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c6faa5467be1a4874657b372a49b7c927.Designer.cs">
+      <DependentUpon>c6faa5467be1a4874657b372a49b7c927.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c7074496366fec9eff2cb1805eba432af.cs" />
+    <Compile Include="A\c71d05727d8fd2343f2090ce7499e0788.cs" />
+    <Compile Include="A\c71d56cf919573942125a92aa3a5a772b.cs" />
+    <Compile Include="A\c721f2ce58e4fe22f32427210a1521f49.cs" />
+    <Compile Include="A\c729dffd0908d9394e2ff50a1f9588119.cs" />
+    <Compile Include="A\c72c3e9a0cc00ee2de6a9f6d658d0ca09.cs" />
+    <Compile Include="A\c731c16c7615c797b8a75d5b2f24d3462.Designer.cs">
+      <DependentUpon>c731c16c7615c797b8a75d5b2f24d3462.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c739e18b10ae91f31263efa30389db279.cs" />
+    <Compile Include="A\c74808c84b2bffe4869b9b9d484057f82.cs" />
+    <Compile Include="A\c74ddf543ad3fdf34a89cbcc13426fc52.cs" />
+    <Compile Include="A\c75fdfaf36a6cfd5544847dc9c3b8c6fc.cs" />
+    <Compile Include="A\c7649ad42270aa243da8490ebdd57505f.cs" />
+    <Compile Include="A\c7687a4dfdaa199dfff40397fbccd9fdd.cs" />
+    <Compile Include="A\c783a6589b66651e4943994ef7de01bfa.cs" />
+    <Compile Include="A\c78c1657645b1911f37c2a4deace4af26.cs" />
+    <Compile Include="A\c793a8ac5c8e22138553e8edbe4f7092f.cs" />
+    <Compile Include="A\c797a2fddc24f0a13db0ba4fa652528ec.cs" />
+    <Compile Include="A\c797ec1388c1af11408ef86282cc1652a.cs" />
+    <Compile Include="A\c79ac1db0c970a9deced85e879d466b2a.cs" />
+    <Compile Include="A\c79caed728c3efc32d12ed7d388c559a7.cs" />
+    <Compile Include="A\c7a3191126c90592123a88b5ac225d222.cs" />
+    <Compile Include="A\c7bdaa15a71638fae3d1aa48c0e87d724.cs" />
+    <Compile Include="A\c7c007275b51212e933d033b54fbe44b3.Designer.cs">
+      <DependentUpon>c7c007275b51212e933d033b54fbe44b3.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c7d3574a77921a6ff7a379b199b50889f.cs" />
+    <Compile Include="A\c7d35d8aac83dc5d10cf8f860b6e578b7.cs" />
+    <Compile Include="A\c7d96389ea6e1f9f926aefc24832f783f.cs" />
+    <Compile Include="A\c7e3f6af67bf34eefc1a4cca086e17069.cs" />
+    <Compile Include="A\c7e42efa4f2962ddb57556e9428329081.cs" />
+    <Compile Include="A\c7e6ad38b7784702e42cb4ef41fe79435.cs" />
+    <Compile Include="A\c7f31033c1d41fe8d956894a8434bbdc2.cs" />
+    <Compile Include="A\c8037ee1a75c36a9550d500d95c56c4af.cs" />
+    <Compile Include="A\c80a45304a7306046b0892e514c366d37.cs" />
+    <Compile Include="A\c80c398cf4e6b2fb091b88536098e2d6b.cs" />
+    <Compile Include="A\c8181fab8bf70eb26b576c872e49f1715.cs" />
+    <Compile Include="A\c8182050bde64f716a9855055b4bd295b.Designer.cs">
+      <DependentUpon>c8182050bde64f716a9855055b4bd295b.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c835740eb09051bccacfad4c551fdd155.cs" />
+    <Compile Include="A\c83965a78c2b6c13eb008938f29c806cf.cs" />
+    <Compile Include="A\c84ac59860b3004eb8ff7b4a52979eb84.cs" />
+    <Compile Include="A\c857777604d3e02c3531d964ce79ea231.cs" />
+    <Compile Include="A\c866035f717c1c145e269422264e8f519.cs" />
+    <Compile Include="A\c869260ca940fbfbf13d160ec468e0bb2.cs" />
+    <Compile Include="A\c8784a7e2bcf638ea1c74b1ace708bc68.cs" />
+    <Compile Include="A\c885752f0ba103b0c8ad11bede25dddd4.cs" />
+    <Compile Include="A\c898b645c13a7704cf22316769e713b40.cs" />
+    <Compile Include="A\c89d5f69592ed6ff3f4bcbdf0f7037053.cs" />
+    <Compile Include="A\c8a61d9c08bd6da5c20c60d8c809c49fd.cs" />
+    <Compile Include="A\c8b671fda31f88dc7c7875175126002f3.cs" />
+    <Compile Include="A\c8b71d35a8b17aa98ded59f739c7fca9e.cs" />
+    <Compile Include="A\c8c1b09e3a447a2a9fab7a6626edbb5fd.cs" />
+    <Compile Include="A\c8d217bce073ddc882212f4d0e016403a.cs" />
+    <Compile Include="A\c8d41fc16c10f4ac30e6f0def27b49dc2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\c8d41fc16c10f4ac30e6f0def27b49dc2.Designer.cs">
+      <DependentUpon>c8d41fc16c10f4ac30e6f0def27b49dc2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\c8e5347953d1eb34e48981c397e5171b9.cs" />
+    <Compile Include="A\c8e60ceced0ce323f661e853233d10ec2.cs" />
+    <Compile Include="A\c8f9f84c76253d3ff7f35684908f75b3c.cs" />
+    <Compile Include="A\c8fe0c6e7a752b4c1e7ccb99b428ad373.cs" />
+    <Compile Include="A\c905cf65152879f2bf4074899bc3a4c35.cs" />
+    <Compile Include="A\c917f36174285ae8be4b419849165b6f8.cs" />
+    <Compile Include="A\c923f9891af8d2e3d429496b6f6f88167.cs" />
+    <Compile Include="A\c92405b00606e9a36e1850edbf7e174fe.cs" />
+    <Compile Include="A\c9277957ec33e30c99670585a602bf767.cs" />
+    <Compile Include="A\c933d8f390d7a245458355cef338c6754.cs" />
+    <Compile Include="A\c94cd30d6ec460744316b60342af07314.cs" />
+    <Compile Include="A\c9538952b0224ea717b33e0e4e7ae98c5.cs" />
+    <Compile Include="A\c9565dc086c3fce3a0877fad108590a9b.cs" />
+    <Compile Include="A\c96210b78306751464b80046e2be9150e.cs" />
+    <Compile Include="A\c9746d6a2eba77fcf6de7825aa9f6a7e4.cs" />
+    <Compile Include="A\c98c53ee3009bb5911e0f8452ea9e0017.cs" />
+    <Compile Include="A\c9a26d91d8eac8623f43f5e1febfb0f47.cs" />
+    <Compile Include="A\c9b35f78180c1b651efd32ed8ddd8b683.cs" />
+    <Compile Include="A\c9b488f95d44a9906937aa2d2b556e79d.cs" />
+    <Compile Include="A\c9c36324383af5efe32cfc37aefd05a8e.cs" />
+    <Compile Include="A\c9d462d6bfbf0a4267f7ed91db470887c.cs" />
+    <Compile Include="A\c9d860ca0f65446f408b1908c86efc88c.cs" />
+    <Compile Include="A\c9e3b15e0906fc28b9aaaafda91843cfe.Designer.cs">
+      <DependentUpon>c9e3b15e0906fc28b9aaaafda91843cfe.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\c9f09e7c9177b659947793f836fb406ba.cs" />
+    <Compile Include="A\c9f447140d3c9c692fc73eba21d436e1c.cs" />
+    <Compile Include="A\c9f6bd73e0994a8a3cafc60b84130cfec.cs" />
+    <Compile Include="A\c9f84a2d5c3aeb9ad49e9f0dd5c2a4c14.cs" />
+    <Compile Include="A\ca25a4d53cddcc6bc7545bb1022695103.cs" />
+    <Compile Include="A\ca2a06a7bbbf1c79d260cf7606ea77ea5.cs" />
+    <Compile Include="A\ca364febee3d94887bac34296848b5f42.cs" />
+    <Compile Include="A\ca3c4c66076f7f10ebaea1747b70c7f21.cs" />
+    <Compile Include="A\ca3dd5645b6e33b91238479a0e470376a.cs" />
+    <Compile Include="A\ca43cac8d5e8aa63a63cf766deb576910.cs" />
+    <Compile Include="A\ca4b14247d04b632a4f7ba75504a8c5a9.cs" />
+    <Compile Include="A\ca4d60b23ae6cb20ad43302467e6dc9e1.cs" />
+    <Compile Include="A\ca4dbe4e221059deb4f3786c044e4860a.cs" />
+    <Compile Include="A\ca586c9ed3aaf55eb207e6b8467a2df58.cs" />
+    <Compile Include="A\ca67c33c9d481a8572e0831f9634d5beb.cs" />
+    <Compile Include="A\ca6d7950a54c7ffb24dd0caad95a2614f.cs" />
+    <Compile Include="A\ca6e34a5383a8565e533c4418201e12dd.cs" />
+    <Compile Include="A\ca74cd7cb1a0b3bdf9559dfe9a59de6fb.cs" />
+    <Compile Include="A\ca7d80640c79713d3597dbccf9d1ce061.cs" />
+    <Compile Include="A\ca8b8f11b13b92ae61d2b0aa7207dbee2.cs" />
+    <Compile Include="A\caa194a1ddc67cd543957fd94f509f2e3.cs" />
+    <Compile Include="A\caa71d3c4d17279b7e7a7fae74d871fe2.cs" />
+    <Compile Include="A\caba6aae6ba2ea6ef470113eba0e94821.cs" />
+    <Compile Include="A\cac2386e3558afe9fea7e694788feaf60.cs" />
+    <Compile Include="A\cac2c857819b151ab47474f5ab0c4c8a9.cs" />
+    <Compile Include="A\cac579ba5cf0ea954e6c065f0b18896a1.cs" />
+    <Compile Include="A\cacd6f8420e56d296adef754f4a362ae7.cs" />
+    <Compile Include="A\cae9a580a7e1dfb09ee42135a2efe1fb7.cs" />
+    <Compile Include="A\cae9f7ebe05c911b4071cd0b20cd93187.cs" />
+    <Compile Include="A\caea8ad587582199f93486d1c751093ae.cs" />
+    <Compile Include="A\caef9f826c1bb5ec01aa968d5ea37c616.cs" />
+    <Compile Include="A\caf27e0a24607a2eca61ed1ed85da5ae6.cs" />
+    <Compile Include="A\caf4d7a4390c73cb460b86e79a69e9e32.cs" />
+    <Compile Include="A\caf60745ee0a07cae97fda4a1fbff3639.cs" />
+    <Compile Include="A\cafec3579a55ef0ba5bcc1f341243b3ba.cs" />
+    <Compile Include="A\cb0176d5dd315b12982875473bccc9c7e.cs" />
+    <Compile Include="A\cb137dbf62cacb3d6d5a05e5cc026608a.cs" />
+    <Compile Include="A\cb1d7493f791f48c2917f09c33ea65904.cs" />
+    <Compile Include="A\cb2b30fcb045ddafaa1632429689f0bfd.cs" />
+    <Compile Include="A\cb40090777e77bca24d8e80d3881b439d.cs" />
+    <Compile Include="A\cb4d5146fc66b3a1cbe77decc1a582315.Designer.cs">
+      <DependentUpon>cb4d5146fc66b3a1cbe77decc1a582315.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cb4e425f2d70132d57f01f6cf60a868ac.cs" />
+    <Compile Include="A\cb52f3f28150b9e69891d97167fde8262.cs" />
+    <Compile Include="A\cb5efed8fc8338f060f0a22f597211902.cs" />
+    <Compile Include="A\cb6030d1be6e262861170c5746e3a0466.cs" />
+    <Compile Include="A\cb6125d5348736aea8498a2c9c6354bc4.cs" />
+    <Compile Include="A\cb62f89df70fbc1a6ea491fc391fd54ac.cs" />
+    <Compile Include="A\cb67567c4a5b441d717da70c5cb9a9239.cs" />
+    <Compile Include="A\cb6cc9a5b122137bc5f2718f61ab49e59.Designer.cs">
+      <DependentUpon>cb6cc9a5b122137bc5f2718f61ab49e59.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cb70f007b284813d58dab09950aeb25c7.cs" />
+    <Compile Include="A\cb776ccbd2397a5ddcfe3bb11c2bfd36a.cs" />
+    <Compile Include="A\cb7967fcc76ad75fb7b9a0e68fd89c6a7.cs" />
+    <Compile Include="A\cb81303dc74fae215ab7acc21aed468fa.cs" />
+    <Compile Include="A\cb83d7b9bc2570649b0e380bddf8cf193.cs" />
+    <Compile Include="A\cb86c13d418bd11a875872ab250b5f8d9.cs" />
+    <Compile Include="A\cb8aa2d508dfc18a08cb8f469873bac67.cs" />
+    <Compile Include="A\cb99844a1fcc49eab64ce3660c283758b.Designer.cs">
+      <DependentUpon>cb99844a1fcc49eab64ce3660c283758b.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cb9d1d8b8ac2f5a3d7f75c3364c2dca5d.cs" />
+    <Compile Include="A\cbbbdbed7e532904d2dfc9c194f4c313b.cs" />
+    <Compile Include="A\cbbee9ed377c1ca44a8493b94c3a630be.cs" />
+    <Compile Include="A\cbc9910ec460ac1fe039be11b08e94c10.cs" />
+    <Compile Include="A\cbcbdbfc95367bfec4c11b371d883aa2d.cs" />
+    <Compile Include="A\cbd0eae57acbba026bbb08db06c98751a.Designer.cs">
+      <DependentUpon>cbd0eae57acbba026bbb08db06c98751a.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cbd3745968a9a575ce5b013ba4ada8ce8.cs" />
+    <Compile Include="A\cbdb71b60ec0ae0ebae5950cc72976b68.cs" />
+    <Compile Include="A\cbdbecb4f2aabec5734fa1432e4548f8e.cs" />
+    <Compile Include="A\cbec968781acf39706554079a117314a2.cs" />
+    <Compile Include="A\cbfa477cacc0f7b226e325a3d45e91591.cs" />
+    <Compile Include="A\cc01ff6ada6bedc91d308c62d456e9145.cs" />
+    <Compile Include="A\cc09e546912236fe58e73aa9152fa3e9b.cs" />
+    <Compile Include="A\cc1dc2bd33d10dede6b214da71b7628f0.cs" />
+    <Compile Include="A\cc2fe70e981e842d8789498e1a2725495.cs" />
+    <Compile Include="A\cc4e5a353b4d3481f87ee2fb6c6fb3ec9.Designer.cs">
+      <DependentUpon>cc4e5a353b4d3481f87ee2fb6c6fb3ec9.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cc50fd4eb0ca1167864832d9d90242c2d.cs" />
+    <Compile Include="A\cc51e80bc690cf4fb71f993ca0910160b.cs" />
+    <Compile Include="A\cc699ab73a45b4cd7a2e7076df2cf126e.Designer.cs">
+      <DependentUpon>cc699ab73a45b4cd7a2e7076df2cf126e.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cc7431c51899b916476c330598db18ed2.cs" />
+    <Compile Include="A\cc84e78656043d401078b58e0ff35dd48.cs" />
+    <Compile Include="A\cc9862cf4c5479bb7da17a0039b59b2b5.cs" />
+    <Compile Include="A\cc986a36f7534edc08e2f8221002d522a.cs" />
+    <Compile Include="A\cccbcf6fe2efffb5320bcac8e43429d84.cs" />
+    <Compile Include="A\ccd80025a308fe111a2b56a5a34e1a7e7.cs" />
+    <Compile Include="A\ccde0986d32f242f41bfd66f082dce0ff.cs" />
+    <Compile Include="A\ccf27d2a38d7279e84184e152bc50d544.Designer.cs">
+      <DependentUpon>ccf27d2a38d7279e84184e152bc50d544.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cd12741190acbe9c40d9e4da0a5a8e496.Designer.cs">
+      <DependentUpon>cd12741190acbe9c40d9e4da0a5a8e496.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cd15023480d8edc86da03780d8b1880ab.cs" />
+    <Compile Include="A\cd161c587b229cb9747bf073c6e98b0b9.cs" />
+    <Compile Include="A\cd16a919e13d3f63e4ae6d8f0fb0e6017.cs" />
+    <Compile Include="A\cd2aafbed56deec6e2406db1545b7c5a2.cs" />
+    <Compile Include="A\cd478a04c48829d6f807d37c0e6d1cb58.cs" />
+    <Compile Include="A\cd4880843d42f3dd634ca35c8e909b573.cs" />
+    <Compile Include="A\cd5c09c7b57f3aa6b224c611a72ca3b10.cs" />
+    <Compile Include="A\cd5c77ebaa36f6ef23c774856f1ca8a47.cs" />
+    <Compile Include="A\cd6f39abd79a47a0ec253339ea309aaed.cs" />
+    <Compile Include="A\cd72f04463e23d86b88073a95b804555a.Designer.cs">
+      <DependentUpon>cd72f04463e23d86b88073a95b804555a.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cd7b202d59bd5ce2d0b930d9b35e3a37d.Designer.cs">
+      <DependentUpon>cd7b202d59bd5ce2d0b930d9b35e3a37d.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cd8c2bbf9848dd570e5642dee5b6d99ed.cs" />
+    <Compile Include="A\cd95843a79444472b64e3924802a4fba4.cs" />
+    <Compile Include="A\cd9b4e7f42bf296df98c06187d4387ec0.cs" />
+    <Compile Include="A\cdaeaabfbf47f39e2fa3301ef23db0326.cs" />
+    <Compile Include="A\cdb02a77cadec7790d5c7c433ab736a12.cs" />
+    <Compile Include="A\cdb49b7d188c427f9d761a977265a2655.cs" />
+    <Compile Include="A\cdb6f4a3ed6575bebc7f4581157aa8732.cs" />
+    <Compile Include="A\cdbb41a7bf638d439031c0d8a2d13ea6e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A\cdbb41a7bf638d439031c0d8a2d13ea6e.Designer.cs">
+      <DependentUpon>cdbb41a7bf638d439031c0d8a2d13ea6e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A\cdd2def75b501bdd47fe0bc95335ac6db.cs" />
+    <Compile Include="A\cde143421b461d1adfe678ec75ab739ed.cs" />
+    <Compile Include="A\ce07c379a1090dd9de869aa5e3a694e98.cs" />
+    <Compile Include="A\ce1579191a34f7c6eb27bbdc097c1c96a.cs" />
+    <Compile Include="A\ce192df8d19c4cb5418e5355903df0836.cs" />
+    <Compile Include="A\ce391dfcb046d82715408fa23d60a1773.Designer.cs">
+      <DependentUpon>ce391dfcb046d82715408fa23d60a1773.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\ce462f8df7ccb876a2d3bd500ac1c174f.cs" />
+    <Compile Include="A\ce4b7cebb3f485cb02cc067c8025138ec.Designer.cs">
+      <DependentUpon>ce4b7cebb3f485cb02cc067c8025138ec.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\ce4dd6e34e6b9e782d27c86cdf5ac58ad.cs" />
+    <Compile Include="A\ce5aad7d87667873eee3134c0bd54fb2c.cs" />
+    <Compile Include="A\ce6dc88dfca19f804f028b036903dc09b.cs" />
+    <Compile Include="A\ce847d870d310e9057f1074f426f4d955.cs" />
+    <Compile Include="A\ce918f9187f6feb5c61edb19a684b744e.cs" />
+    <Compile Include="A\ce91c3ee3b6503970820b59a90b300d72.cs" />
+    <Compile Include="A\ceaf02aeeb578404b88907d58ccbca101.cs" />
+    <Compile Include="A\ceb03484676e95b814d4e588e434e560b.cs" />
+    <Compile Include="A\ceb2cf459e5f1c83fa9071b906b061820.cs" />
+    <Compile Include="A\ceba9f9e0e6a262196f1a06078a90f071.cs" />
+    <Compile Include="A\cebbdeae8341a51f374f3ef4c993a069a.cs" />
+    <Compile Include="A\cebe4618707cda8768cff8656169fe7ae.cs" />
+    <Compile Include="A\cecee0c60d6da21ad1c7d911787ab8274.cs" />
+    <Compile Include="A\ced0446e94a4a0c2880834673a4bff58b.cs" />
+    <Compile Include="A\ceda1a4b2f7ba934babe5c69c42dc13cb.Designer.cs">
+      <DependentUpon>ceda1a4b2f7ba934babe5c69c42dc13cb.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cee99c437602d1c749dae976cd2ce5184.cs" />
+    <Compile Include="A\ceee61848167c1ade885c85db30acc060.cs" />
+    <Compile Include="A\cef6c0abffd4c77eb21f799d5eddaf127.cs" />
+    <Compile Include="A\ceffa389ee86c0ee26f31dd3efacbdd38.cs" />
+    <Compile Include="A\cf00b8d3686971bcd30227efeb92f5320.cs" />
+    <Compile Include="A\cf0e1ccede3cecdb492e215e1e460c040.cs" />
+    <Compile Include="A\cf102f47e92574fa2f6d6be0ff8bdb8e5.cs" />
+    <Compile Include="A\cf1c627d907263f45d17f5734c5b4fd67.cs" />
+    <Compile Include="A\cf2286880ac0e60eb4b73f505e8420fff.cs" />
+    <Compile Include="A\cf2b4a9dbe434b6a0557e32d5575d4dca.cs" />
+    <Compile Include="A\cf3218b8adf29f173dcfe848adf64aa6d.cs" />
+    <Compile Include="A\cf32eaa8aee6acfe2b63f83d3ff5e4fc7.cs" />
+    <Compile Include="A\cf384f9f63ae1709a39c8cdbc74e66393.cs" />
+    <Compile Include="A\cf39ba1cc0203f3f17ac1b306844a12cd.cs" />
+    <Compile Include="A\cf4e7b532a4dd6f2addd2a2faf098796e.cs" />
+    <Compile Include="A\cf4e7e017a810e8941867929a8a86f8da.cs" />
+    <Compile Include="A\cf5419afb7f5e24635ad0a220ecadcb25.cs" />
+    <Compile Include="A\cf6f120af387fdadacd350a0ba653ecce.cs" />
+    <Compile Include="A\cf71511ede0f72106c76b44f85383e308.cs" />
+    <Compile Include="A\cf73c09f4e7123594c77f50f36eff3418.Designer.cs">
+      <DependentUpon>cf73c09f4e7123594c77f50f36eff3418.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="A\cf7c96734e58d8de9864e1ea854bc2b7b.cs" />
+    <Compile Include="A\cf84308e6d808d5bbedd8dbe0a8775cbd.cs" />
+    <Compile Include="A\cf89c9e6d7b0e5b1763ed7cc912ae0888.cs" />
+    <Compile Include="A\cfaa4915c4fbda803f0dc35f62b55f8f8.cs" />
+    <Compile Include="A\cfb19a3cacc7f2065ec9c53b96fcea918.cs" />
+    <Compile Include="A\cfc1c9e9677f363b2083ecda099a34dd4.cs" />
+    <Compile Include="A\cfdbfd2aef072f6b94b5ee07d96aad70a.cs" />
+    <Compile Include="A\cff4d02688c2bcedd267ded238c5b4985.cs" />
+    <Compile Include="A\cffca5f589bf749535c1a95087bcafa44.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell2.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell3.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShortcut.cs" />
+    <Compile Include="IWshRuntimeLibrary\WshShell.cs" />
+    <Compile Include="NusHelper\DataSize.cs" />
+    <Compile Include="NusHelper\Platform.cs" />
+    <Compile Include="NusHelper\Server\DbRow.cs" />
+    <Compile Include="NusHelper\Server\KeyValidationResponse.cs" />
+    <Compile Include="NusHelper\TitleId.cs" />
+    <Compile Include="Nus_Helper_Shared_Core\NusHelper\Saves\SaveDescription.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WIIU_Downloader\Forms\WhatToAction.cs" />
+    <Compile Include="WIIU_Downloader\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WMPLib\IWMPControls.cs" />
+    <Compile Include="WMPLib\IWMPCore.cs" />
+    <Compile Include="WMPLib\IWMPCore2.cs" />
+    <Compile Include="WMPLib\IWMPCore3.cs" />
+    <Compile Include="WMPLib\IWMPPlayer4.cs" />
+    <Compile Include="WMPLib\IWMPSettings.cs" />
+    <Compile Include="WMPLib\WindowsMediaPlayer.cs" />
+    <Compile Include="WMPLib\WMPPlayState.cs" />
+    <Compile Include="WMPLib\_WMPOCXEvents.cs" />
+    <Compile Include="WMPLib\_WMPOCXEvents_Event.cs" />
+    <Compile Include="WMPLib\_WMPOCXEvents_PlayStateChangeEventHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="A\c1d7da5fb47c4831665780b1b86ae5a04.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c1d7da5fb47c4831665780b1b86ae5a04.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c1f6179bdc03861e26477b7826da4fb8c.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>c1f6179bdc03861e26477b7826da4fb8c.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c2c4b14fe5e90291f1e89570e7696c8a0.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c2c4b14fe5e90291f1e89570e7696c8a0.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c2cc66aa233e9a8e3a345bb26df4263e1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c2cc66aa233e9a8e3a345bb26df4263e1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c2dcabb874d69fc0fa9d819b6f090913a.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c2dcabb874d69fc0fa9d819b6f090913a.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c39b800e9e165a3cdc1c56c51ebe12109.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c39b800e9e165a3cdc1c56c51ebe12109.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c3dc6b208b04533a4c84b7a3aea9612f3.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c3dc6b208b04533a4c84b7a3aea9612f3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c3e89d2b199cb88db040c1d3093faf8e0.resx">
+      <DependentUpon>c3e89d2b199cb88db040c1d3093faf8e0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c4661923ed4f88392e3827d508c62c12a.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c4661923ed4f88392e3827d508c62c12a.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c4be875c999e24029765c8ed7fc59e17c.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>c4be875c999e24029765c8ed7fc59e17c.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c60797b4f8bfa489df1954dcdc88ad77d.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c60797b4f8bfa489df1954dcdc88ad77d.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c68525722ec1c851086937cebaadd5aba.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c68525722ec1c851086937cebaadd5aba.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c690dd8ca8a3ca5d55c4b9e5f8db74b48.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c690dd8ca8a3ca5d55c4b9e5f8db74b48.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c6eb084e1f00e617923ac0f2eb5316921.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c6eb084e1f00e617923ac0f2eb5316921.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c6faa5467be1a4874657b372a49b7c927.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>c6faa5467be1a4874657b372a49b7c927.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c731c16c7615c797b8a75d5b2f24d3462.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c731c16c7615c797b8a75d5b2f24d3462.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c7c007275b51212e933d033b54fbe44b3.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c7c007275b51212e933d033b54fbe44b3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c8182050bde64f716a9855055b4bd295b.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c8182050bde64f716a9855055b4bd295b.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c8d41fc16c10f4ac30e6f0def27b49dc2.resx">
+      <DependentUpon>c8d41fc16c10f4ac30e6f0def27b49dc2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\c9e3b15e0906fc28b9aaaafda91843cfe.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>c9e3b15e0906fc28b9aaaafda91843cfe.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cb4d5146fc66b3a1cbe77decc1a582315.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cb4d5146fc66b3a1cbe77decc1a582315.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cb6cc9a5b122137bc5f2718f61ab49e59.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cb6cc9a5b122137bc5f2718f61ab49e59.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cb99844a1fcc49eab64ce3660c283758b.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cb99844a1fcc49eab64ce3660c283758b.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cbd0eae57acbba026bbb08db06c98751a.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cbd0eae57acbba026bbb08db06c98751a.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cc4e5a353b4d3481f87ee2fb6c6fb3ec9.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cc4e5a353b4d3481f87ee2fb6c6fb3ec9.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cc699ab73a45b4cd7a2e7076df2cf126e.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cc699ab73a45b4cd7a2e7076df2cf126e.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\ccf27d2a38d7279e84184e152bc50d544.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ccf27d2a38d7279e84184e152bc50d544.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cd12741190acbe9c40d9e4da0a5a8e496.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cd12741190acbe9c40d9e4da0a5a8e496.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cd72f04463e23d86b88073a95b804555a.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cd72f04463e23d86b88073a95b804555a.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cd7b202d59bd5ce2d0b930d9b35e3a37d.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cd7b202d59bd5ce2d0b930d9b35e3a37d.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cdbb41a7bf638d439031c0d8a2d13ea6e.resx">
+      <DependentUpon>cdbb41a7bf638d439031c0d8a2d13ea6e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\ce391dfcb046d82715408fa23d60a1773.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ce391dfcb046d82715408fa23d60a1773.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\ce4b7cebb3f485cb02cc067c8025138ec.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ce4b7cebb3f485cb02cc067c8025138ec.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\ceda1a4b2f7ba934babe5c69c42dc13cb.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ceda1a4b2f7ba934babe5c69c42dc13cb.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A\cf73c09f4e7123594c77f50f36eff3418.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>cf73c09f4e7123594c77f50f36eff3418.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIIU_Downloader.Resources.contb.ttf" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.!DarkGreen.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.!DarkRed.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.!Desert.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.!LightGrey.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.!Silver.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.DarkBlue.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader.Themes.Light.tssp" />
+    <EmbeddedResource Include="WIIU_Downloader\Forms\frmDebug.resx" />
+    <EmbeddedResource Include="WiiU_USB_Helper$" />
+    <EmbeddedResource Include="WiiU_USB_Helper%" />
+    <EmbeddedResource Include="WiiU_USB_Helper-" />
+    <EmbeddedResource Include="WiiU_USB_Helper.exe.licenses" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WIIU_Downloader\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
